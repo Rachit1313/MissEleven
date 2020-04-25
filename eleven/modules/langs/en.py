@@ -34,7 +34,7 @@ Click Help button to find out more about how to use me to my full potential.
 
 Follow [Eleven](https://t.me/MissEleven) ( @MissEleven ) if you want to keep up with the news, updates and bot downtime!
 
-This bot is managed by @HitaloSama
+This bot is managed by @Half_SATAN
 
 Want to add me to your group? [Click here!](t.me/MissElevenBot?startgroup=true)
 """,
