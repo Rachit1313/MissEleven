@@ -7,7 +7,7 @@ from telegram import Message, Update, Bot, User
 from telegram.ext import run_async, CommandHandler
 from eleven import dispatcher, spamcheck
 from eleven.modules.languages import tl
-from hitsuki.modules.helper_funcs.filters import CustomFilters
+from eleven.modules.helper_funcs.filters import CustomFilters
 
 
 @spamcheck
