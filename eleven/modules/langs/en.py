@@ -32,7 +32,7 @@ This is where translations come in; you can change the language of most replies 
 Hi {}! My name is *{}* - I'm here to help you manage your groups!
 Click Help button to find out more about how to use me to my full potential.
 
-Follow [Eleven](https://t.me/MissEleven) ( @MissEleven ) if you want to keep up with the news, updates and bot downtime!
+Follow [Eleven](https://t.me/MissEleven) (@MissEleven) if you want to keep up with the news, updates and bot downtime!
 
 This bot is managed by @Half_SATAN
 
