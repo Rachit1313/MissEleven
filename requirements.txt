@@ -21,3 +21,4 @@ spongemock
 zalgo-text
 aiohttp
 tldextract
+coffeehouse
