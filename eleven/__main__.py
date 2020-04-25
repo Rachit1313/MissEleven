@@ -156,7 +156,7 @@ def start(update, context):
         else:
             first_name = update.effective_user.first_name
             buttons = InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="📃 HitaloSama's Docs", url="https://telegra.ph/")],
+                [[InlineKeyboardButton(text="📃 Half_SATAN's Docs", url="https://telegra.ph/")],
                 [InlineKeyboardButton(text="⚙️ Connections", callback_data="main_connect")],
                 [InlineKeyboardButton(text="🇺🇸 Language", callback_data="main_setlang"), InlineKeyboardButton(text="❓ Help", callback_data="help_back")]])
             update.effective_message.reply_text(
