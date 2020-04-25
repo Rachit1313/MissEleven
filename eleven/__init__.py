@@ -80,6 +80,8 @@ if ENV:
 	CUSTOM_CMD = os.environ.get('CUSTOM_CMD', False)
 	TEMPORARY_DATA = os.environ.get('TEMPORARY_DATA', None)
 	DEEPFRY_TOKEN = os.environ.get('DEEPFRY_TOKEN', "")
+	AI_API_KEY = os.environ.get('AI_API_KEY', "")
+        WALL_API = os.environ.get('WALL_API', None)
 
 else:
 	from eleven.config import Development as Config
