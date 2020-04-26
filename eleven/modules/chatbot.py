@@ -45,7 +45,7 @@ def remove_chat(update, context):
         msg.reply_text("AI disabled successfully!")
         
         
-def check_message(update, message):
+def check_message(context):
     reply_msg = message.reply_to_message
     if message.text.lower() == "eleven":
         return True
