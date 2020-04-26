@@ -18,7 +18,7 @@ api_client = LydiaAI(CoffeeHouseAPI)
 
 
 @run_async
-def add_chat(update, context):
+def add_chat(bot: Bot, update: Update):
     global api_client
     chat_id = update.effective_chat.id
     msg = update.effective_message
@@ -34,7 +34,7 @@ def add_chat(update, context):
         
         
 @run_async
-def remove_chat(update, context):
+def remove_chat(bot: Bot, update: Update):
     msg = update.effective_message
     chat_id = update.effective_chat.id
     is_chat = sql.is_chat(chat_id)
@@ -45,7 +45,7 @@ def remove_chat(update, context):
         msg.reply_text("AI disabled successfully!")
         
         
-def check_message(context, message):
+def check_message(bot: Bot, message):
     reply_msg = message.reply_to_message
     if message.text.lower() == "eleven":
         return True
@@ -57,7 +57,7 @@ def check_message(context, message):
                 
         
 @run_async
-def chatbot(update, context):
+def chatbot(bot: Bot, update: Update):
     global api_client
     msg = update.effective_message
     chat_id = update.effective_chat.id
@@ -87,8 +87,8 @@ def chatbot(update, context):
             bot.send_message(OWNER_ID, f"Chatbot error: {e} occurred in {chat_id}!")
                     
                     
-ADD_CHAT_HANDLER = CommandHandler("addchat", add_chat, filters=CustomFilters.sudo_filter)
-REMOVE_CHAT_HANDLER = CommandHandler("rmchat", remove_chat, filters=CustomFilters.sudo_filter)
+ADD_CHAT_HANDLER = CommandHandler("addchat", add_chat, filters=CustomFilters.dev_filter)
+REMOVE_CHAT_HANDLER = CommandHandler("rmchat", remove_chat, filters=CustomFilters.dev_filter)
 CHATBOT_HANDLER = MessageHandler(Filters.text & (~Filters.regex(r"^#[^\s]+") & ~Filters.regex(r"^!")
                                   & ~Filters.regex(r"^s\/")), chatbot)
 # Filters for ignoring #note messages, !commands and sed.
