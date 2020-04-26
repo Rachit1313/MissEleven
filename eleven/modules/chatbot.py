@@ -6,7 +6,7 @@ from coffeehouse.api import API
 from coffeehouse.exception import CoffeeHouseError as CFError
 
 from telegram import Message, Chat, User, Update, Bot
-from telegram.ext import DisableAbleCommandHandler, MessageHandler, Filters, run_async
+from telegram.ext import CommandHandler, MessageHandler, Filters, run_async
 
 from eleven import dispatcher, AI_API_KEY, OWNER_ID
 import eleven.modules.sql.chatbot_sql as sql
@@ -31,8 +31,8 @@ def add_chat(update, context):
         msg.reply_text("AI successfully enabled for this chat!")
     else:
         msg.reply_text("AI is already enabled for this chat!")
-        
-        
+
+
 @run_async
 def remove_chat(update, context):
     msg = update.effective_message
@@ -43,8 +43,8 @@ def remove_chat(update, context):
     else:
         sql.rem_chat(chat_id)
         msg.reply_text("AI disabled successfully!")
-        
-        
+
+
 def check_message(context):
     reply_msg = message.reply_to_message
     if message.text.lower() == "eleven":
@@ -54,8 +54,8 @@ def check_message(context):
             return True
     else:
         return False
-                
-        
+
+
 @run_async
 def chatbot(update, context):
     global api_client
@@ -84,11 +84,11 @@ def chatbot(update, context):
             sleep(0.3)
             msg.reply_text(rep, timeout=60)
         except CFError as e:
-            bot.send_message(OWNER_ID, f"Chatbot error: {e} occurred in {chat_id}!")
-                    
-                    
-ADD_CHAT_HANDLER = DisableAbleCommandHandler("addchat", add_chat, filters=CustomFilters.sudo_filter)
-REMOVE_CHAT_HANDLER = DisableAbleCommandHandler("rmchat", remove_chat, filters=CustomFilters.sudo_filter)
+            bot.send_message(OWNER_ID, f"Chatbot error: {e} occurred in {chat_id}!"
+
+
+ADD_CHAT_HANDLER = CommandHandler("addchat", add_chat, filters=CustomFilters.sudo_filter)
+REMOVE_CHAT_HANDLER = CommandHandler("rmchat", remove_chat, filters=CustomFilters.sudo_filter)
 CHATBOT_HANDLER = MessageHandler(Filters.text & (~Filters.regex(r"^#[^\s]+") & ~Filters.regex(r"^!")
                                   & ~Filters.regex(r"^s\/")), chatbot)
 # Filters for ignoring #note messages, !commands and sed.
