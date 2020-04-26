@@ -158,7 +158,7 @@ def new_member(update, context):
 					parse_mode=ParseMode.HTML
 				)
 				context.bot.send_message(chat.id,
-								"Thanks for adding me into your group! Don't forgot to checkout the Eleven Support (@MissEleven_Support)! And follow my news channel @MissEleven.")
+								"Thanks for adding me into your group! Don't forgot to checkout the Eleven Support Group (@MissEleven_Support)! And follow my news channel @MissEleven.")
 
 			else:
 				# If welcome message is media, send with appropriate function
