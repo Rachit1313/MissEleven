@@ -12,7 +12,7 @@ from eleven.modules.disable import DisableAbleCommandHandler
 
 
 @run_async
-def wall(bot: Bot, update: Update, args):
+def wall(update, context):
     chat_id = update.effective_chat.id
     msg = update.effective_message
     msg_id = update.effective_message.message_id
