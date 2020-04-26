@@ -4,7 +4,7 @@ import requests as r
 from random import randint
 from time import sleep
 
-from telegram import Message, Chat, Update, Bot, Args
+from telegram import Message, Chat, Update, Bot
 from telegram.ext import run_async
 
 from eleven import dispatcher, WALL_API
@@ -16,7 +16,7 @@ def wall(update, context):
     chat_id = update.effective_chat.id
     msg = update.effective_message
     msg_id = update.effective_message.message_id
-    query = " ".join(args)
+    query = " ".join
     if not query:
         msg.reply_text("Please enter a query!")
         return
