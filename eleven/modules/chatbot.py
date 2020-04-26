@@ -6,7 +6,7 @@ from coffeehouse.api import API
 from coffeehouse.exception import CoffeeHouseError as CFError
 
 from telegram import Message, Chat, User, Update, Bot
-from telegram.ext import CommandHandler, MessageHandler, Filters, run_async
+from telegram.ext import DisableAbleCommandHandler, MessageHandler, Filters, run_async
 
 from eleven import dispatcher, AI_API_KEY, OWNER_ID
 import eleven.modules.sql.chatbot_sql as sql
@@ -87,8 +87,8 @@ def chatbot(update, context):
             bot.send_message(OWNER_ID, f"Chatbot error: {e} occurred in {chat_id}!")
                     
                     
-ADD_CHAT_HANDLER = CommandHandler("addchat", add_chat, filters=CustomFilters.sudo_filter)
-REMOVE_CHAT_HANDLER = CommandHandler("rmchat", remove_chat, filters=CustomFilters.sudo_filter)
+ADD_CHAT_HANDLER = DisableAbleCommandHandler("addchat", add_chat, filters=CustomFilters.sudo_filter)
+REMOVE_CHAT_HANDLER = DisableAbleCommandHandler("rmchat", remove_chat, filters=CustomFilters.sudo_filter)
 CHATBOT_HANDLER = MessageHandler(Filters.text & (~Filters.regex(r"^#[^\s]+") & ~Filters.regex(r"^!")
                                   & ~Filters.regex(r"^s\/")), chatbot)
 # Filters for ignoring #note messages, !commands and sed.
