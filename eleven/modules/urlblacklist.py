@@ -87,7 +87,7 @@ def rm_blacklist_url(update, context):
                 parse_mode=ParseMode.HTML)
         else:
             message.reply_text(
-                Removed <code>{}</code> domains from the blacklist. "
+                Removed <code>{}</code> domains from the blacklist."
                 "{} did not exist, so were not removed.".format(
                     unblacklisted,
                     len(to_unblacklist) - unblacklisted),
