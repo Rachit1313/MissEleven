@@ -31,8 +31,8 @@ def add_chat(update, context):
         msg.reply_text("AI successfully enabled for this chat!")
     else:
         msg.reply_text("AI is already enabled for this chat!")
-
-
+        
+        
 @run_async
 def remove_chat(update, context):
     msg = update.effective_message
@@ -43,9 +43,9 @@ def remove_chat(update, context):
     else:
         sql.rem_chat(chat_id)
         msg.reply_text("AI disabled successfully!")
-
-
-def check_message(context):
+        
+        
+def check_message(context, message):
     reply_msg = message.reply_to_message
     if message.text.lower() == "eleven":
         return True
@@ -54,8 +54,8 @@ def check_message(context):
             return True
     else:
         return False
-
-
+                
+        
 @run_async
 def chatbot(update, context):
     global api_client
@@ -84,9 +84,9 @@ def chatbot(update, context):
             sleep(0.3)
             msg.reply_text(rep, timeout=60)
         except CFError as e:
-            bot.send_message(OWNER_ID, f"Chatbot error: {e} occurred in {chat_id}!"
-
-
+            bot.send_message(OWNER_ID, f"Chatbot error: {e} occurred in {chat_id}!")
+                    
+                    
 ADD_CHAT_HANDLER = CommandHandler("addchat", add_chat, filters=CustomFilters.sudo_filter)
 REMOVE_CHAT_HANDLER = CommandHandler("rmchat", remove_chat, filters=CustomFilters.sudo_filter)
 CHATBOT_HANDLER = MessageHandler(Filters.text & (~Filters.regex(r"^#[^\s]+") & ~Filters.regex(r"^!")
