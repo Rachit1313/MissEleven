@@ -38,7 +38,7 @@ Clique no botão Ajuda para descobrir mais sobre como me usar em todo o meu pote
 
 Siga o [Eleven](https://t.me/MissEleven) (@MissEleven) se você quiser acompanhar as notícias, atualizações e tempo de inatividade do bot!
 
-Este bot é gerenciado por @Hal_SATAN
+Este bot é gerenciado por @Half\_SATAN
 
 Deseja me adicionar ao seu grupo? [Clique aqui!](t.me/MissElevenBot?startgroup=true)‌‌
 """,
