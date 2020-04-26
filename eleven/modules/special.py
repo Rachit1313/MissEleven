@@ -9,15 +9,12 @@ from emoji import UNICODE_EMOJI
 from platform import python_version
 
 from telegram.error import BadRequest
-from telegram import Message, Chat, Update, Bot
 from telegram import ParseMode, InlineKeyboardMarkup, InlineKeyboardButton
 from telegram.ext import CommandHandler, run_async, Filters
-from telegram.utils.helpers import mention_html
 
 import eleven.modules.helper_funcs.git_api as git
 import eleven.__main__ as elevenv
-from eleven import dispatcher, OWNER_ID, SUPPORT_USERS, WHITELIST_USERS, spamcheck
-from eleven.__main__ import USER_INFO
+from hitsuki import dispatcher, OWNER_ID, spamcheck
 from eleven.modules.disable import DisableAbleCommandHandler
 from eleven.modules.sql import languages_sql as langsql
 
