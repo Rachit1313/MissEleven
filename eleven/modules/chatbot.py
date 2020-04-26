@@ -18,7 +18,7 @@ api_client = LydiaAI(CoffeeHouseAPI)
 
 
 @run_async
-def add_chat(bot: Bot, update: Update):
+def add_chat(update, context):
     global api_client
     chat_id = update.effective_chat.id
     msg = update.effective_message
@@ -34,7 +34,7 @@ def add_chat(bot: Bot, update: Update):
         
         
 @run_async
-def remove_chat(bot: Bot, update: Update):
+def remove_chat(update, context):
     msg = update.effective_message
     chat_id = update.effective_chat.id
     is_chat = sql.is_chat(chat_id)
@@ -45,7 +45,7 @@ def remove_chat(bot: Bot, update: Update):
         msg.reply_text("AI disabled successfully!")
         
         
-def check_message(bot: Bot, message):
+def check_message(update, context):
     reply_msg = message.reply_to_message
     if message.text.lower() == "eleven":
         return True
@@ -57,7 +57,7 @@ def check_message(bot: Bot, message):
                 
         
 @run_async
-def chatbot(bot: Bot, update: Update):
+def chatbot(update, context):
     global api_client
     msg = update.effective_message
     chat_id = update.effective_chat.id
