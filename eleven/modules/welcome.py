@@ -24,6 +24,7 @@ from eleven.modules.log_channel import loggable
 import eleven.modules.sql.feds_sql as fedsql
 from eleven.modules.languages import tl
 from eleven.modules.helper_funcs.alternate import send_message, leave_chat
+from eleven.modules.helper_funcs.filters import CustomFilters
 
 
 OWNER_SPECIAL = False
