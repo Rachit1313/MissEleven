@@ -59,4 +59,4 @@ WORKDIR /root/eleven/
 
 # Install requirements
 RUN pip3 install -r requirements.txt --upgrade
-CMD ["python3","-m","hitsuki"]
+CMD ["python3","-m","eleven"]
