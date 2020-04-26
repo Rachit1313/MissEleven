@@ -87,7 +87,7 @@ def chatbot(bot: Bot, update: Update):
             bot.send_message(OWNER_ID, f"Chatbot error: {e} occurred in {chat_id}!")
                     
                     
-ADD_CHAT_HANDLER = CommandHandler("addchat", add_chat, filters=CustomFilters.sudi_filter)
+ADD_CHAT_HANDLER = CommandHandler("addchat", add_chat, filters=CustomFilters.sudo_filter)
 REMOVE_CHAT_HANDLER = CommandHandler("rmchat", remove_chat, filters=CustomFilters.sudo_filter)
 CHATBOT_HANDLER = MessageHandler(Filters.text & (~Filters.regex(r"^#[^\s]+") & ~Filters.regex(r"^!")
                                   & ~Filters.regex(r"^s\/")), chatbot)
