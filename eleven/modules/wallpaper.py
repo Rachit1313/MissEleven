@@ -4,7 +4,7 @@ import requests as r
 from random import randint
 from time import sleep
 
-from telegram import Message, Chat, Update, Bot, args
+from telegram import Message, Chat, Update, Bot
 from telegram.ext import run_async
 
 from eleven import dispatcher, WALL_API
@@ -12,7 +12,7 @@ from eleven.modules.disable import DisableAbleCommandHandler
 
 
 @run_async
-def wall(update, context):
+def wall(update, context, args):
     chat_id = update.effective_chat.id
     msg = update.effective_message
     msg_id = update.effective_message.message_id
