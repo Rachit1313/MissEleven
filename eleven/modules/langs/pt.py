@@ -28,7 +28,7 @@ Os idiomas disponíveis são:
 - 🇺🇸 Inglês
 
 Os comandos disponíveis são:
- - /setlang: define seu idioma preferido.‌‌""",
+ - /setlang: define seu idioma preferido.‌‌""",
 
 # __main__
 	"Is there anything I can help? 😊": "Existe algo que eu possa ajudar? 😊‌‌",
@@ -38,7 +38,7 @@ Clique no botão Ajuda para descobrir mais sobre como me usar em todo o meu pote
 
 Siga o [Eleven](https://t.me/MissEleven) (@MissEleven) se você quiser acompanhar as notícias, atualizações e tempo de inatividade do bot!
 
-Este bot é gerenciado por @Half\_SATAN
+Este bot é gerenciado por [サタン](https://t.me/Half_SATAN)
 
 Deseja me adicionar ao seu grupo? [Clique aqui!](t.me/MissElevenBot?startgroup=true)‌‌
 """,
@@ -47,13 +47,13 @@ Olá! Meu nome é *Eleven*. Eu sou um bot de gerenciamento de grupos, aqui para 
 Eu tenho muitos recursos úteis, como controle de flood, um sistema de avisos, um sistema de anotações e até respostas predeterminadas em determinadas palavras-chave.
 
 *Principais comandos disponíveis:*
- - /start: comando legal para verificar se o bot está vivo ou não.
- - /help: PM é você esta mensagem.
- - /help <nome do módulo>: informações de PM sobre esse módulo.
- - /setlang: altera o idioma do bot.
- - /settings:
-   - no privado: enviará suas configurações para todos os módulos suportados.
-   - em um grupo: o redirecionará para o PV, com todas as configurações do grupo.
+ - /start: comando legal para verificar se o bot está vivo ou não.
+ - /help: PM é você esta mensagem.
+ - /help <nome do módulo>: informações de PM sobre esse módulo.
+ - /setlang: altera o idioma do bot.
+ - /settings:
+   - no privado: enviará suas configurações para todos os módulos suportados.
+   - em um grupo: o redirecionará para o PV, com todas as configurações do grupo.
 
 Todos os comandos podem ser usados ​​com `/` ou `!`‌‌
 """,
@@ -1522,7 +1522,7 @@ This also works with /goodbye.
  - /stickerid: reply message sticker at PM to get ID sticker
  - /ping: check the speed of the bot
  - /fortune: give a fortune
- - /tr <from>-<to> <text>: translate text written or reply for any language to the intended language, or
+ - /tr <from>-<to> <text>: translate text written or reply for any language to the intended language, or
  - /tr <to> <text>: translate text written or reply for any language to the intended language
  - /wiki <text>: search for text written from the wikipedia source
  - /ud <text>: search from urban dictionary
