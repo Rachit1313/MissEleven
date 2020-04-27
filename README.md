@@ -1,6 +1,6 @@
 # Eleven
 
-[Codacy Badge](https://api.codacy.com/project/badge/Grade/630d285e84d143bfb39ccdf07131656c)](https://app.codacy.com/manual/satanicsoul/MissEleven?utm_source=github.com&utm_medium=referral&utm_content=satanicsoul/MissEleven&utm_campaign=Badge_Grade_Settings)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/630d285e84d143bfb39ccdf07131656c)](https://app.codacy.com/manual/satanicsoul/MissEleven?utm_source=github.com&utm_medium=referral&utm_content=satanicsoul/MissEleven&utm_campaign=Badge_Grade_Settings)
 
 ----------
 
