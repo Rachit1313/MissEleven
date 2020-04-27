@@ -34,7 +34,7 @@ Click Help button to find out more about how to use me to my full potential.
 
 Follow [Eleven](https://t.me/MissEleven) (@MissEleven) if you want to keep up with the news, updates and bot downtime!
 
-This bot is managed by @Half\_SATAN
+This bot is managed by [サタン](https://t.me/Half_SATAN)
 
 Want to add me to your group? [Click here!](t.me/MissElevenBot?startgroup=true)
 """,
@@ -347,7 +347,7 @@ When marked as AFK, any mentions will be replied to with a message to say you're
 	"backups_help": """
 Some people just want to see the world burn. Others, just want to have a way of grouping their chat data in one place so they can export their configuration to other chats!
 
- import/export settings feature allows you to quickly set up a chat using a preexisting template. Instead of setting the same settings over and over again in different chats, you can use this feature to copy the general configuration across groups.
+Eleven import/export settings feature allows you to quickly set up a chat using a preexisting template. Instead of setting the same settings over and over again in different chats, you can use this feature to copy the general configuration across groups.
 The generated file is in standard JSON format, so if there are any settings you dont want to import to your other chats, just open the file and edit it before importing.
 Exporting settings can be done by any administrator, but for security reasons, importing can only be done by the group creator.
 
@@ -369,7 +369,7 @@ Exporting settings can be done by any administrator, but for security reasons, i
 *Admin commands:*
 - /export: Generate a file containing all your chat data. (you can do this 12 hours once)
 - /import: Reply to a group butler/marie/rose/emilia/eleven backup file to import as much as possible, making the transfer super simple!
-Note that files/photos from other bots can't be imported due to telegram restrictions. Except for  backup it self
+Note that files/photos from other bots can't be imported due to telegram restrictions. Except for Eleven backup it self
 
 *Note:* To avoid abuse, this command is heavily rate limited; this is to make sure that people importing/exporting data don't slow down the bot.
 """,
@@ -1534,7 +1534,7 @@ This also works with /goodbye.
  - /stickerid: reply message sticker at PM to get ID sticker
  - /ping: check the speed of the bot
  - /fortune: give a fortune
- - /tr <from>-<to> <text>: translate text written or reply for any language to the intended language, or
+ - /tr <from>-<to> <text>: translate text written or reply for any language to the intended language, or
  - /tr <to> <text>: translate text written or reply for any language to the intended language
  - /wiki <text>: search for text written from the wikipedia source
  - /ud <text>: search from urban dictionary
