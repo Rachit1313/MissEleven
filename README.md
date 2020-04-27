@@ -11,7 +11,6 @@ Can be found as [Eleven](https://t.me/MissElevenBot) on Telegram.
 
 Eleven is based on [Hitsuki](https://github.com/HitaloSama/Hitsuki)
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/satanicsoul/MissEleven.git)
 
 ## Special Credits
 ----------
