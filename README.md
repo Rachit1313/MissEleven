@@ -1,6 +1,6 @@
 # Eleven
 
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/630d285e84d143bfb39ccdf07131656c)](https://app.codacy.com/manual/satanicsoul/MissEleven?utm_source=github.com&utm_medium=referral&utm_content=satanicsoul/MissEleven&utm_campaign=Badge_Grade_Settings)  ![](https://img.shields.io/github/repo-size/satanicsoul/MissEleven.svg?label=Repo%20size&style=flat-square)
+![](https://img.shields.io/github/repo-size/satanicsoul/MissEleven.svg?label=Repo%20size&style=rounded-square)
 ----------
 
 A modular telegram Python bot running on python3 with an sqlalchemy database.
