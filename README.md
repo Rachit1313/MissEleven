@@ -9,7 +9,7 @@ Originally a simple group management bot with multiple admin features, it has ev
 
 Can be found as [Eleven](https://t.me/MissElevenBot) on Telegram.
 
-Eleven is based on [Hitsuki](https://github.com/HitaloSama/Hitsuki)
+Eleven is based on [Hitsuki](https://t.me/LordHitsuki_BOT)
 
 
 ## Special Credits
