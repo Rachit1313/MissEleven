@@ -37,7 +37,7 @@ def vercheck() -> str:
     return str(VERSION)
 
 SOURCE_STRING = """
-I'm built in python3, using the python-telegram-bot library, and am fully opensource - you can find what makes me tick [here](https://github.com/satanicsoul/MissEleven)
+I'm built in python3, using the python-telegram-bot library, and am fully opensource - you can find what makes me tick [here](OPPS! No Source Code)
 """
 
 IMPORTED = {}
